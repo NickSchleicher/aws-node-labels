@@ -3,6 +3,10 @@
 Easily label your kubernetes cluster's nodes based on their EC2 instance tags. Cluster deployments such as EKS does not allow for automatically attaching labels to nodes, a feature that was included with [kops](https://github.com/kubernetes/kops).
 
 ## Prerequisites
+```
+go get github.com/NickSchleicher/aws-node-labels
+```
+
 Your AWS CLI should be setup with the same account your cluster is using
 Your kubectl should be setup with your cluster
 Your nodes on the cluster should be tagged if you want a label attached to the node
